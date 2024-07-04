@@ -1,5 +1,11 @@
 # quasi-optimal_ranking
-Accompanying repository for `Quasi-Optimal Permutation Ranking and Applications to PERK` AFRICACRYPT paper.
+Accompanying repository for [`Quasi-Optimal Permutation Ranking and Applications to PERK`](https://ia.cr/2024/412) AFRICACRYPT 2024 paper.
+
+This library contains the implementations in C of ranking/unranking algorithms for permutations in the following flavors.:
+
+- The classic permutation ranking/unranking algorithms in two versions: one using [tiny-bignum-c](https://github.com/kokke/tiny-bignum-c?tab=readme-ov-file) and one [GMP](https://gmplib.org/) for arbitrary-arithmetic precision.
+- The [Bonet variant](https://bonetblai.github.io/reports/AAAI08-ws10-ranking.pdf) permutation ranking/unranking algorithms also implemented with [tiny-bignum-c](https://github.com/kokke/tiny-bignum-c?tab=readme-ov-file) and [GMP](https://gmplib.org/).
+- The [quasi-optimal permutation ranking/unranking](https://ia.cr/2024/412) algorithms which do not require arbitrary-arithmetic precision. In addition, we provide AVX/AVX2 optimizations for certain parameters in PERK v1.1.
 
 Authors:
 
